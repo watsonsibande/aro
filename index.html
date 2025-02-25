@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commonly Used Sites</title>
+  <style>
+    body {
+      background-color: #1d0505;
+  font-family: cursive;
+}
+    .framework {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 100%;/* Adjust this value according to your preference */
+      margin: 0 auto;
+    }
+
+    .site-box {
+      width: 200px; /* Adjust box width */
+      height: 150px; /* Adjust box height */
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .site-logo {
+      width: 80px; /* Adjust logo width */
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .site-box:hover {
+      background-color: lightblue;
+    }
+
+   a {
+  text-decoration: none;
+}
+h2 {
+  text-align: center;
+  font-family: cursive;
+  color: aquamarine;
+  text-transform: uppercase;
+}
+  </style>
+</head>
+<body>
+    <h2>
+        my commonly used websites
+    </h2>
+  <div class="framework">
+    <div class="site-box">
+        <img class="site-logo" src="../MyHomePage/logos/common.png"   alt="phpMyAdmin Logo">
+        <a href="http://localhost/phpmyadmin/" target="_blank">phpMyAdmin</a>
+      </div>
+
+      <div class="site-box">
+        <img class="site-logo" src="../MyHomePage/logos/ftms.png" alt="ftms Logo">
+        <a href="https://enlightening-gross.000webhostapp.com/index.php" target="_blank">sibande ftms online</a>
+      </div>
+      <div class="site-box">
+        <img class="site-logo" src="../MyHomePage/logos/common.png"   alt="Google Logo">
+        <a href="http://localhost/ftms/" target="_blank">sibande ftms</a>
+      </div>
+
+      <div class="site-box">
+        <img class="site-logo" src="../MyHomePage/logos/todaytv.png"   alt="Google Logo">
+        <a href="https://todaytvseries.one/" target="_blank">todaytvseries.one</a>
+      </div>
+
+      <div class="site-box">
+        <img class="site-logo" src="../MyHomePage/logos/mobiletvshows.png"   alt="Google Logo">
+        <a href="https://tvseries.in/index.php/" target="_blank">mobiletodaytvseries</a>
+      </div>
+
+      <div class="site-box">
+        <img class="site-logo" src="../MyHomePage/logos/common.png"   alt="Google Logo">
+        <a href="https://getintopc.com/?id=000138867047/" target="_blank">getintopc</a>
+      </div>
+
+      <div class="site-box">
+        <img class="site-logo" src="../MyHomePage/logos/common.png"   alt="Google Logo">
+        <a href="https://oceanofgames.com//" target="_blank">oceanofgames</a>
+      </div>
+
+    <div class="site-box">
+      <img class="site-logo" src="../MyHomePage/logos/google.png"   alt="Google Logo">
+      <a href="https://www.google.com" target="_blank">Google</a>
+    </div>
+    <div class="site-box">
+      <img class="site-logo" src="../MyHomePage/logos/youtube.png"  alt="YouTube Logo">
+      <a href="https://www.youtube.com" target="_blank">YouTube</a>
+    </div>
+    <div class="site-box">
+      <img class="site-logo" src="../MyHomePage/logos/facebook.png" alt="Facebook Logo">
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    </div>
+    <div class="site-box">
+      <img class="site-logo"  src="../MyHomePage/logos/twiter.png" alt="Twitter Logo">
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
+
+    <div class="site-box">
+      <img class="site-logo" src="../MyHomePage/logos/chatgpt.png" alt="GitHub Logo">
+      <a href="https://chat.openai.com/" target="_blank">chatgpt</a>
+    </div>
+    <div class="site-box">
+      <img class="site-logo" src="https://www.instagram.com/static/images/ico/xxhdpi_launcher.png/99cf3909d459.png" alt="Instagram Logo">
+      <a href="https://yts.rs/" target="_blank">Movies</a>
+    </div>
+    <div class="site-box">
+      <img class="site-logo" src="../MyHomePage/logos/common.png"  alt="Reddit Logo">
+      <a href="https://www.reddit.com" target="_blank">Reddit</a>
+    </div>
+    <div class="site-box">
+      <img class="site-logo" src="../MyHomePage/logos/amazon.png" alt="Amazon Logo">
+      <a href="https://fitgirl-repacks.site/" target="_blank">Fitgirl_r-games</a>
+    </div>
+    <div class="site-box">
+      <img class="site-logo" src="../MyHomePage/logos/netflix.png" alt="Netflix Logo">
+      <a href="https://eztvx.to/home" target="_blank">EZTV Series</a>
+    </div>
+    <div class="site-box">
+      <img class="site-logo" src="../MyHomePage/logos/linkedin.png" alt="LinkedIn Logo">
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+    <div class="site-box">
+      <img class="site-logo" src="../MyHomePage/logos/GitHub.png" alt="GitHub Logo">
+      <a href="https://www.github.com" target="_blank">GitHub</a>
+    </div>
+
+    
+
+  
+
+    
+  </div>
+
+  <script>
+    // Add event listener to each site-box div
+    var siteBoxes = document.querySelectorAll('.site-box');
+    siteBoxes.forEach(function(box) {
+      box.addEventListener('click', function() {
+        var link = box.querySelector('a').getAttribute('href');
+        openLink(link);
+      });
+    });
+
+    function openLink(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
